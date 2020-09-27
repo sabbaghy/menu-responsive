@@ -1,0 +1,38 @@
+.footer {
+   background: var(--main-clr);
+   color: var(--sec-clr);
+   text-align: center;
+   padding: 2.5rem 0;
+   font-size: 1em;
+
+   a { 
+      text-decoration: none;
+      color: var(--sec-clr);
+   }
+
+   &__link {
+    font-weight: var(--fw-bold);
+    padding: 1em;
+   }
+
+   &__link:hover,
+   .social-list__link:hover {
+      color: var(--sec-clr);
+   }
+
+   .social-list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 2em 0 0;
+      padding: 0;
+
+      &__item {
+         margin: 0 .5em;
+      }
+
+      &__link {
+         padding: .5em;
+      }
+   }
+}

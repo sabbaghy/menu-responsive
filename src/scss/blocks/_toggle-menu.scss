@@ -1,0 +1,67 @@
+.toggle-menu{
+   width: 2.2rem;
+   height: 2.2rem;
+
+   z-index: 100;
+
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all .5s ease-out;
+
+   @include table {
+      display: none;
+   }
+
+   &:hover{
+      transform: scale(.95);
+   }
+
+   .bar{
+      width: 1.8rem;
+      height: 3px;
+      background-color: var(--brown-light);
+      border-radius: 5px;
+      display: inline-block;
+      position: relative;
+
+      &::before,
+      &::after{
+         content: '';
+         position: absolute;
+         width: inherit;
+         border-radius: inherit;
+         height: inherit;
+         background-color: var(--brown-light);
+         transition: all .5s ease-out;
+      }
+
+      &::before{
+         top: -.5rem;
+      }
+
+      &::after{
+         top: .5rem;
+      }
+   }
+
+   &--open {
+
+      .bar{
+         background-color: transparent;
+      
+         &::before{
+            top: 0;
+            background-color: var(--brown-dark);
+            transform: rotate(135deg);
+         }
+
+         &::after{
+            top: 0;
+            background-color: var(--brown-dark);
+            transform: rotate(-135deg);
+         }
+      }
+   }
+}

@@ -1,0 +1,112 @@
+.header{
+   width: 100%;
+   height: var(--header-height);
+   padding: 1rem 2rem;
+   background: var(--green-light);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav__logo{
+   width: 100px;
+   z-index: 100;
+}
+
+.main-nav{
+   display: none;
+
+   &--show{
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 50;
+      display: flex;
+      background: var(--green-overlay);
+   }
+
+   @include table {
+      width: 100%;
+      height: var(--header-height);
+      display: flex; 
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+   }
+}
+
+
+.nav__list{
+   width: 70%;
+   margin-right: 15%;
+   margin-left: 15%;
+   padding-top: 4rem;
+   height: calc(100vh - var(--header-height));
+   position: absolute;
+   z-index: 100;
+   top: var(--header-height);
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   background: var(--green-overlay);
+
+   @include table {
+      width: fit-content;
+      position: relative;
+      margin: 0;
+      padding-top: 0;
+      top: 0;
+      height: var(--header-height);
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background: transparent;
+   }
+}
+
+.nav__item{
+   list-style: none;
+   text-align: center;
+   width: 100%;
+   padding: 0 2rem;
+   margin: .5rem;
+
+   @include table {
+      width: fit-content;
+      padding: 0;
+      margin: 0;
+   }
+}
+
+.nav__link{
+   text-decoration: none;
+   text-transform: uppercase;
+   color: var(--brown-light);
+   padding: 1rem 3.5rem;
+   display: block;
+   font-size: 2rem;
+   line-height: 2.5rem;
+   // border-top: 1px solid var(--clr-light);
+
+   &:hover,
+   &--active{
+      color: var(--green-light);
+      background: var(--brown-light);
+      border: 1px solid var(--brown-light);
+      border-radius: 10px;
+   }
+
+   @include table {
+      width: fit-content;
+      padding: 1rem 1rem;
+      font-size: 1rem;
+      line-height: 1;
+   }
+}

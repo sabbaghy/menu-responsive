@@ -1,0 +1,33 @@
+//https://paletasdecolores.com/paleta-de-colores-2594/
+
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+   --green-light : #f3fbec;
+   --green-normal: #caefb3;
+   --green-overlay: rgba(47, 95, 2, .5);
+   --green-dark: #2f5f02;
+   --brown-light: #e09601;
+   --brown-dark: #491701;
+   --clr-light: #f3f4f3;
+   --clr-dark: #131313;
+   --clr-test: red;
+
+
+   --main-clr:hsl(93, 65%, 84%);
+   --sec-clr: hsl(331, 32%, 17%);
+   --bg-clr-light: #f3fbec;
+   --bg-clr-dark:#2f5f02;
+   --txt-clr-dark: #C46101;
+   --txt-clr-light: #FEEC9B;
+   --cta-crl:#e70024;
+
+   --ff-title: 'BenchNine', sans-serif;
+   --ff-title: 'Open Sans', sans-serif;
+   --ff-body: 'Roboto', sans-serif; // ==> para el resto de los textos
+   --fw-reg: 400;
+   --fw-bold: 700;
+   --fs-base: 16px; // ==> tamaño base de texto para toda la aplicacion
+   --header-height: 60px;
+}

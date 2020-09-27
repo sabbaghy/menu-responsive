@@ -1,0 +1,46 @@
+.main-hero{
+   position: relative;
+   .hero{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: calc(100vh);
+      background: url('../assets/img/banners/Header1_1920X1440.jpg') no-repeat center center;
+      background-size: cover;
+      color: var(--clr-light);
+      
+      &::after{ // la capa sobre la image
+         content: '';
+         position: absolute;
+         top: 0;
+         right: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(0,0,0, .7);
+      }
+
+      .section__title--hero{
+         position: relative;
+         padding: 0 2rem;
+         font-size: 4rem;
+         line-height: 1;
+         text-transform: uppercase;
+         text-align: left;
+         color: var(--clr-light);
+         margin-bottom: 0;
+         z-index: 1;
+      }
+
+      .section__subtitle--hero{
+         padding: 0 2rem;
+         position: relative;
+         text-align: left;
+         color: var(--clr-light);
+         text-transform: uppercase;
+         font-size: 1.5rem;
+         margin-top: 1em;
+         z-index: 1;
+      }
+   }
+}
